@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/dojo/loader.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        var loaderConfig = {
+            paths: {
+                pinf: "/pinf-for-dojo/pinf.require"
+            }
+        };
+        require(loaderConfig, [
+            "pinf!bundle"
+        ], function(sandbox) {
+            sandbox.main();
+        });
+    </script>
+</body>
+</html>

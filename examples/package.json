@@ -1,0 +1,9 @@
+{
+  "name": "pinf-for-dojo-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "main": "./server.js"
+}
