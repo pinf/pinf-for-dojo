@@ -2,6 +2,9 @@
 define({
     load: function (name, require, loaded) {
 
+        // @see https://github.com/dojo/loader/issues/34
+        var config = window.PINF_FOR_DOJO_CONFIG || {};
+
         (function() {
             // NOTE: DO NOT EDIT THIS CODE! IT IS AUTO-INJECTED ON `make build`.
             // @inject <loader>
@@ -621,6 +624,6 @@ define({
             // @inject </loader>
         }).call(window);
 
-        return window.PINF.sandbox(require.toUrl(name) + ".js", {}, loaded, loaded);
+        return window.PINF.sandbox(require.toUrl(name) + ".js", config || {}, loaded, loaded);
     }
 });
