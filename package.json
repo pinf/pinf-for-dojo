@@ -1,24 +1,24 @@
 {
-  "name": "pinf-for-dojo",
-  "version": "0.0.0",
-  "publish": true,
-  "dependencies": {
-    "dojo": "^2.0.0-alpha.6",
-    "pinf-loader-js": "0.4.x"
-  },
-  "devDependencies": {
-    "jquery": "^2.1.4",
-    "chai": "^3.4.1",
-    "express": "^4.13.3",
-    "fs-extra": "^0.26.2",
-    "grunt": "^0.4.5",
-    "grunt-mocha": "^0.4.15",
-    "mocha": "^2.3.4",
-    "q": "^1.4.1"
-  },
-  "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter list test/*.js",
-    "build": "node scripts/build",
-    "dev": "node test/browser/server"
-  }
+    "name": "pinf-for-dojo",
+    "version": "0.0.1",
+    "publish": true,
+    "dependencies": {
+        "dojo": "^2.0.0-alpha.6",
+        "pinf-loader-js": "0.4.x"
+    },
+    "devDependencies": {
+        "jquery": "^2.1.4",
+        "chai": "^3.4.1",
+        "express": "^4.13.3",
+        "fs-extra": "^0.26.2",
+        "grunt": "^0.4.5",
+        "grunt-mocha": "^0.4.15",
+        "mocha": "^2.3.4",
+        "q": "^1.4.1"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/mocha --reporter list test/*.js",
+        "build": "node scripts/build",
+        "dev": "node test/browser/server"
+    }
 }
